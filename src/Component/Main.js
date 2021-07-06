@@ -26,9 +26,9 @@ componentDidMount=()=>{
 
 addData=(value)=>{
    let reqBody={
-       name:strDrink,
-       img:strDrinkThumb,
-       id:idDrink,
+       strDrink:name,
+       strDrinkThumb:strDrinkThumb,
+       idDrink:idDrink,
 
    }
    axios.post(`localhost:8090/data`,reqBody);
